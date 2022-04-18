@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { MaltratosexualPageRoutingModule } from './maltratosexual-routing.module';
 
 import { MaltratosexualPage } from './maltratosexual.page';
+import { ComponentesModule } from '../../componentes/componentes.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MaltratosexualPageRoutingModule
+    MaltratosexualPageRoutingModule,
+    ComponentesModule
   ],
   declarations: [MaltratosexualPage]
 })

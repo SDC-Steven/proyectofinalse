@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TipodemaltratoPageRoutingModule } from './tipodemaltrato-routing.module';
+import { CiberbullyingPageRoutingModule } from './ciberbullying-routing.module';
 
-import { TipodemaltratoPage } from './tipodemaltrato.page';
+import { CiberbullyingPage } from './ciberbullying.page';
 import { ComponentesModule } from '../../componentes/componentes.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentesModule } from '../../componentes/componentes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    TipodemaltratoPageRoutingModule,
+    CiberbullyingPageRoutingModule,
     ComponentesModule
   ],
-  declarations: [TipodemaltratoPage]
+  declarations: [CiberbullyingPage]
 })
-export class TipodemaltratoPageModule {}
+export class CiberbullyingPageModule {}

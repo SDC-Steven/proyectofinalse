@@ -43,6 +43,18 @@ const routes: Routes = [
     path: 'maltratopsicologico',
     loadChildren: () => import('./paginas/maltratopsicologico/maltratopsicologico.module').then( m => m.MaltratopsicologicoPageModule)
   },
+  {
+    path: 'grooming',
+    loadChildren: () => import('./paginas/grooming/grooming.module').then( m => m.GroomingPageModule)
+  },
+  {
+    path: 'ciberbullying',
+    loadChildren: () => import('./paginas/ciberbullying/ciberbullying.module').then( m => m.CiberbullyingPageModule)
+  },
+  {
+    path: 'maltratopresencial',
+    loadChildren: () => import('./paginas/maltratopresencial/maltratopresencial.module').then( m => m.MaltratopresencialPageModule)
+  },
 ];
 
 @NgModule({

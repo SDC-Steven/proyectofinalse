@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RealizarPageRoutingModule } from './realizar-routing.module';
 
 import { RealizarPage } from './realizar.page';
+import { ComponentesModule } from '../../componentes/componentes.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RealizarPageRoutingModule
+    RealizarPageRoutingModule,
+    ComponentesModule
   ],
   declarations: [RealizarPage]
 })
