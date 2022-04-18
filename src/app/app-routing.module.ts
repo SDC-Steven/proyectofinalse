@@ -8,8 +8,40 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'principal',
     pathMatch: 'full'
+  },
+  {
+    path: 'principal',
+    loadChildren: () => import('./paginas/principal/principal.module').then( m => m.PrincipalPageModule)
+  },
+  {
+    path: 'realizar',
+    loadChildren: () => import('./paginas/realizar/realizar.module').then( m => m.RealizarPageModule)
+  },
+  {
+    path: 'realizarsi',
+    loadChildren: () => import('./paginas/realizarsi/realizarsi.module').then( m => m.RealizarsiPageModule)
+  },
+  {
+    path: 'realizarno',
+    loadChildren: () => import('./paginas/realizarno/realizarno.module').then( m => m.RealizarnoPageModule)
+  },
+  {
+    path: 'tipodemaltrato',
+    loadChildren: () => import('./paginas/tipodemaltrato/tipodemaltrato.module').then( m => m.TipodemaltratoPageModule)
+  },
+  {
+    path: 'maltratosexual',
+    loadChildren: () => import('./paginas/maltratosexual/maltratosexual.module').then( m => m.MaltratosexualPageModule)
+  },
+  {
+    path: 'maltratofisico',
+    loadChildren: () => import('./paginas/maltratofisico/maltratofisico.module').then( m => m.MaltratofisicoPageModule)
+  },
+  {
+    path: 'maltratopsicologico',
+    loadChildren: () => import('./paginas/maltratopsicologico/maltratopsicologico.module').then( m => m.MaltratopsicologicoPageModule)
   },
 ];
 
