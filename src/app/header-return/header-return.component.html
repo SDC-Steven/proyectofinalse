@@ -2,11 +2,11 @@
   <ion-toolbar>
 
 
-    <ion-title>{{titulo | titlecase}}</ion-title>
+    <ion-title slot="end" color="primary">{{titulo | titlecase}}</ion-title>
 
     <!--Crear boton de regreso-->
     <ion-buttons slot="start">
-      <ion-back-button text="Regresar" defaultHref="/"></ion-back-button>
+      <ion-back-button text="Regresar" color="primary" defaultHref="/"></ion-back-button>
     </ion-buttons>
 
   </ion-toolbar>
