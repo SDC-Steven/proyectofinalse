@@ -3,7 +3,7 @@
 <ion-content>
   <!--Sugerencia: al hacer click, que muestre la lista que aparece abajo de esta opcion en el powerpoint-->
   <ion-button expand="block" (click)="onClickAccion()">
-    <h1 class="ion-padding">ACCIONES</h1>
+    <div class="text-title"> ACCIONES </div>
   </ion-button>
 
 
@@ -11,23 +11,28 @@
   <div #accion style="display:none">
     <ion-list>
       <ion-item>
+        <ion-icon name="document-lock-outline" class="icons"></ion-icon>
         <ion-label> Protección de pruebas </ion-label>
       </ion-item>
 
 
       <ion-item>
+        <ion-icon name="add-outline" class="icons"></ion-icon>
         <ion-label> Parte de lesiones </ion-label>
       </ion-item>
 
       <ion-item>
+        <ion-icon name="call-outline" class="icons"></ion-icon>
         <ion-label> Comunicación a TS </ion-label>
       </ion-item>
 
       <ion-item>
+        <ion-icon name="document-text-outline" class="icons"></ion-icon>
         <ion-label> Informe </ion-label>
       </ion-item>
 
       <ion-item>
+        <ion-icon name="school-outline" class="icons"></ion-icon>
         <ion-label> Comunicación al centro escolar </ion-label>
       </ion-item>
 
