@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Renderer2  } from '@angular/core';
 
 @Component({
   selector: 'app-maltratofisico',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaltratofisicoPage implements OnInit {
 
-  constructor() { }
+  @ViewChild('accion',{read:ElementRef, static:false}) Baccion: ElementRef;
+
+  constructor(private renderer:Renderer2, private element:ElementRef) { }
 
   ngOnInit() {
   }
+
+  onClickAccion() {
+
+     this.renderer.setStyle(this.Baccion.nativeElement, 'display','block');
+    
+   }
+ 
 
 }
